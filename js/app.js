@@ -15,5 +15,14 @@ $(window).on('scroll', function(){
 	});
 
 
+	if(wScroll > $('.modelPics').offset().top - $(window).height()/1.2){
+		$('.modelPics img').each(function(i){
+		setTimeout(function(){
+				$('.modelPics img').eq(i).addClass('isShowing');
+			},750*Math.exp(i*0.15)-750);	
+		
+			});
+	}
+
 
 })

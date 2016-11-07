@@ -1,6 +1,9 @@
 body
-	height: 2000px
 	margin: 0
+	font-family: "Open Sans", sans-serif
+h1
+  color: #ccc
+  weight: 300
 .headerImage
 	background-image: url('../images/bird-bg.jpg')
 	background-size: auto 600px
@@ -39,5 +42,26 @@ body
 	height: 100px
 	top: 50%
 	margin-top: -50px
-	
-	
+.content 
+	position: relative
+	background: white
+	margin-bottom: 400px
+	overflow: hidden
+	padding: 100px 0
+	max-width: 640px
+	margin: 0 auto
+	text-align: center
+.modelPics
+	margin-bottom: 100px
+	img
+		margin-bottom: 20px
+		position: relative
+		opacity: 0
+		transform: translateX(-20px)
+		transition: all 0.2s ease-in-out
+		
+		&.isShowing
+			opacity: 1
+			transform: translateX(0px)
+
+
